@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+        <title>Fifth Records Radio Player</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Scarlet Stitch</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#play">Play</a></li>
+                            <li><a href="#buy">Buy</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#schedule">Schedule</a></li>
+                            <li><a href="#share">Share</a></li>
+                            <li><a href="#more">More</a></li>
+			    <!--
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+			    -->
+                        </ul>
+			<!--
+                        <form class="navbar-form pull-right">
+                            <input class="span2" type="text" placeholder="Email">
+                            <input class="span2" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form>
+			-->
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+	<div class="main-wrapper">
+        <div id="main" class="main container">
+
+	  <div id="loading" class="page">
+	    <h1>Loading...</h1>
+	  </div>
+
+	  <div id="contact" class="page">
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 header">
+	          <h1>Contact</h1>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 message">
+		  <a class="btn btn-primary btn-large" href="mailto:fifth@fifthrecordsandradio.com">Email</a>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 call">
+		  <a class="btn btn-primary btn-large" href="tel:+17062063605">Call</a>
+		  <div class="phone-explicit">Or, (706) 206-3605</div>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	  </div>
+
+	  <div id="player" class="page">
+
+            <div class="player-row row">
+	    	<div class="span4">
+		</div>
+	    	<div class="player-controls span4">
+			<a id="previous-audio" class="btn btn-primary btn-large audio-control disabled">&laquo;</a>
+			<a id="play-pause-toggle" class="btn btn-primary btn-large audio-control disabled">Play</a>
+			<a id="next-audio" class="btn btn-primary btn-large audio-control disabled">&raquo;</a>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+
+            <div class="row band-row">
+                <div class="span4">
+               </div>
+                <div class="span4">
+                    <h2 class="song-title"></h2>
+                    <p><a href="#about-song">About the song</a></p>
+                    <p><a class="btn" href="#buy">Buy Now</a></p>
+                </div>
+                <div class="span4">
+               </div>
+            </div>
+	  </div>
+
+	  <div id="schedule" class="page">
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 header">
+	          <h1>Schedule</h1>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span12"><div class="day">Sunday</div></div>
+	    </div>
+	    <div class="row">
+	    	<div class="span12"><div class="day">Monday</div></div>
+	    </div>
+	    <div class="row">
+	    	<div class="span12"><div class="day">Tuesday</div></div>
+	    </div>
+	    <div class="row">
+	    	<div class="span12"><div class="day">Wednesday</div></div>
+	    </div>
+	    <div class="row">
+	    	<div class="span12"><div class="day">Thursday</div></div>
+	    </div>
+	    <div class="row">
+	    	<div class="span12"><div class="day">Friday</div></div>
+	    </div>
+	    <div class="row">
+	    	<div class="span12"><div class="day">Saturday</div></div>
+	    </div>
+	  </div>
+
+	  <div id="share" class="page">
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 header">
+	          <h1>Share</h1>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 facebook">
+		  <a class="btn btn-primary btn-large">Facebook</a>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 twitter">
+		  <a class="btn btn-primary btn-large">Twitter</a>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	  </div>
+
+	  <div id="more" class="page">
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 header">
+	          <h1>Scarlet Stitch</h1>
+
+			<p>Nominated for Best Rock Band and Best Female Rock Vocals by the 2013 Georgia Music Awards, Scarlet Stitch has had a breakthrough year.  With their second album Macon set to be released mid -June 2013, Scarlet Stitch has already started working on new songs for their third album.  Together for 5 years and holding strong, this rock and roll band from North Georgia will captivate you with their original songs about good times, hard times, life's pains, all nighters, love, truth, and redemption. The energy and excitement Scarlet Stitch brings to their music, live performances and fans is infectious... </p>
+
+			<p>
+			Deb Cartew - Vocal/Guitar<br/>
+			Jason Kernw - Bass/Vocals<br/>
+			Tim Pieniaszew - Drums<br/>
+			Brian Langlew - Guitar<br/>
+			Duke Waylanw - Guitar
+			</p>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 news">
+		  <a class="btn btn-primary btn-large">News</a>
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	  </div>
+
+	  <div id="buy" class="page">
+	    <div class="row">
+	    	<div class="span4">
+		</div>
+	    	<div class="span4 header">
+	          <h1>Buy the Music</h1>
+
+		  <p><a href="http://sbx.sk/A6vS" target="_blank">Buy Now!</a> (via PayPal)</p>
+
+		</div>
+	    	<div class="span4">
+		</div>
+	    </div>
+	  </div>
+
+            <hr>
+
+            <footer>
+                <p>&copy; Fifth Records and Radio 2013</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+	</div> <!-- /main-wrapper -->
+
+
+	<div class="audio-tags">
+		<audio class="audio-player current" loop data-title="Macon">
+			<source id="mp3_source" src="audio/Macon.mp3" />
+			<source id="ogg_source" src="audio/Macon.ogg" />
+		</audio>
+		<audio class="audio-player" loop data-title="Summer Rain">
+			<source id="mp3_source" src="audio/Summer_Rain.mp3" />
+			<source id="ogg_source" src="audio/Summer_Rain.ogg" />
+		</audio>
+		<audio class="audio-player" loop data-title="Reality of Shame">
+			<source id="mp3_source" src="audio/Reality_of_Shame.mp3" />
+			<source id="ogg_source" src="audio/Reality_of_Shame.ogg" />
+		</audio>
+		<audio class="audio-player" loop data-title="Where the Wild Things Are">
+			<source id="mp3_source" src="audio/Where_the_wild_things_are.mp3" />
+			<source id="ogg_source" src="audio/Where_the_wild_things_are.ogg" />
+		</audio>
+	</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/underscore.js"></script>
+        <script src="js/vendor/backbone.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

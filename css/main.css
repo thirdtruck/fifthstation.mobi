@@ -1,0 +1,74 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+	background-color: #130C06;
+	background-image: url("../branding/Scarlet_Stitch/background.png");
+	background-position: top center;
+	background-repeat: no-repeat;
+
+	color: white;
+}
+
+.main {
+	border-radius: 1em;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 1em;
+}
+
+.main .page {
+	display: none;
+}
+
+.main .page#loading {
+	display: block;
+}
+
+.row {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.player-row, .band-row, .player-controls {
+	text-align: center;
+}
+
+.footer {
+}
+
+.main-wrapper {
+	background-image: url("../branding/Scarlet_Stitch/title.png");
+	background-position: center 1em;
+	background-repeat: no-repeat;
+}
+
+#contact .header, #contact .call, #contact .message,
+#share .header, #share .facebook, #share .twitter,
+#more .header, #more .news
+{
+	text-align: center;
+}
+
+#contact .btn,
+#share .btn,
+#more .btn
+{
+}
+
+#schedule .day {
+	font-size: 150%;
+	font-weight: bold;
+	border-radius: 1em;
+	background-color: #111111;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+.call .phone-explicit {
+	margin-top: 0.5em;
+	font-size: 110%;
+}
+
