@@ -1,1 +1,19 @@
-_site/
+_site/*
+_theme_packages/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+
+# Local developer environment
+*.swp
+*.swo
+*~
+*.bak
+
+# Local development script
+rsync_it.sh
