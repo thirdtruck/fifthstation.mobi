@@ -6,7 +6,7 @@
 
 body {
 	background-color: #130C06;
-	background-image: url("../branding/Scarlet_Stitch/background.png");
+	background-image: url("https://s3.amazonaws.com/fifthstation.mobi/branding/Scarlet_Stitch/background.png");
 	background-position: top center;
 	background-repeat: no-repeat;
 
@@ -40,7 +40,7 @@ body {
 }
 
 .main-wrapper {
-	background-image: url("../branding/Scarlet_Stitch/title.png");
+	background-image: url("https://s3.amazonaws.com/fifthstation.mobi/branding/Scarlet_Stitch/title.png");
 	background-position: center 1em;
 	background-repeat: no-repeat;
 }
