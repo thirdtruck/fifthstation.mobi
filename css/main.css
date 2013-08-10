@@ -38,12 +38,19 @@ body {
 	text-align: center;
 }
 
+.logo {
+	text-align: center;
+}
+
+.logo img {
+	text-align: center;
+	margin: 0.5em auto 0.5em auto;
+}
+
 .footer {
 }
 
 .main-wrapper {
-	background-image: url("https://s3.amazonaws.com/fifthstation.mobi/branding/Scarlet_Stitch/title.png");
-	background-image: url("../branding/FifthRecords/fifthrecords_logo.png");
 	background-width: 100%;
 	background-position: center 1em;
 	background-repeat: no-repeat;
